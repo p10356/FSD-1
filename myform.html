@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 1</title>
+</head>
+<body>
+    <form method="get" action="#">
+        <fieldset >
+            <legend>Personal</legend>
+            <label for="Fname">First Name</label>
+            <input type="text"  name="Fname" required autofocus id="Fname" minlength="3" placeholder="Enter your First Name" disabled value="aaa"> * 
+            <br>
+            <label for="Lname">Last &nbsp;Name</label>
+            <input type="text" name="Lname" id="Lname" minlength="3" placeholder="Enter Your Last Name">
+            <br>
+            <label for="Gender">Gender</label>
+            <input type="radio" name="Gender" id="Gender" value="male"> Male
+            <input type="radio" name="Gender" id="Gender" value="female"> Female
+            <br>
+            <label for="Hobbies">Hobbies</label>
+            <input type="checkbox" name="Hobbies" id="Hobbies" value="dancing">Dancing
+            <input type="checkbox" name="Hobbies" id="Hobbies" value="singing">Singing
+            <input type="checkbox" name="Hobbies" id="Hobbies" value="reading">Reading
+            <br>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" rows="1"></textarea>
+            <br>
+            <label for="city">City</label>
+            <select name="city" id="city">
+                <option disabled selected>----select----</option>
+                <optgroup label="Gujrat">
+                    <option value="amd">Ahmedabad</option>
+                    <option value="gan">Gandhinagar</option>
+                    <option value="bvn">Bhavnagar</option>
+                </optgroup>
+                <optgroup label="Maharastra">
+                    <option value="mumbai">Mumbai</option>
+                    <option value="pune">Pune</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="fcol">Fav color</label>
+            <input type="color" name="fcol" id="fcol">
+            <br>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+        </fieldset>
+        <fieldset>
+            <legend>Professional</legend>
+            <label for="email">Email</label>
+            <input type="email" pattern="[A-Za-z0-9]+@gmail\.com" name="email" id="email">
+            <br>
+            <label for="pass">Phone No</label>
+            <input type="tel" name="pass" id="pass">
+            <br>
+            <label for="fs">Fav Subject</label>
+            <input type="text"  list="data" name="fs" id="fs" autocomplete>
+            <datalist id="data">
+                <option value="fsd">
+                <option value="py">
+                <option value="de">
+                <option value="ps">
+            </datalist>  
+            <!-- The text input field -->
+            <br>
+            <label for="sal">Salary</label> 5 LPA
+            <input type="range" name="sal" id="sal" step="2" value="5" min="5" max="15"> 15 LPA
+            <br>
+            <label for="cv">Resume</label>
+            <input type="file" multiple accept=".pdf, .png, .html" name="cv" id="cv"> 
+            <br>
+            <label for="cgpa">CGPA</label>
+            <input type="number" step="0.01" min="0" max="10" name="cgpa" id="cgpa">
+        </fieldset>
+        
+        
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
